@@ -1,0 +1,987 @@
+.input-group .form-control:first-child, .input-group-addon:first-child, .input-group-btn:first-child>.btn, .input-group-btn:first-child>.dropdown-toggle, .input-group-btn:last-child>.btn:not(:last-child):not(.dropdown-toggle) {
+	@include border-radius(0);
+}
+
+.input-group .form-control:last-child, .input-group-addon:last-child, .input-group-btn:last-child>.btn, .input-group-btn:last-child>.btn-group>.btn, .input-group-btn:last-child>.dropdown-toggle, .input-group-btn:first-child>.btn:not(:first-child), .input-group-btn:first-child>.btn-group:not(:first-child)>.btn {
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+}
+
+.form-control{
+	@include box-shadow(none);
+	@include border-radius(0);
+}
+
+.input-group-btn:first-child>.btn, .input-group-btn:first-child>.btn-group {
+	margin-right: -2px;
+}
+
+.dropdown-menu{
+	border:2px solid #666;
+	background:#fff;
+	margin-top:0;
+	@include border-radius(0);
+	@include box-shadow(none);
+	&:before{
+		border:0;
+	}
+
+	&.typeahead{
+		&>li{
+			&.active{
+				&>a{
+					background: #ddd;
+					color:#333;
+					filter:none;
+
+				}
+				&:focus,&:hover{
+					&>a{
+						background: $primary-blue;
+						color:#fff;
+						filter:none;
+
+					}
+				}
+			}
+		}
+	}
+
+	&>li{
+		&:focus,&:hover{
+			&>a{
+				background: #ddd;
+				color:#333;
+				filter:none;
+
+			}
+		}
+		&>a{
+			padding:6px 15px;
+			font-size:13px;
+			filter:none;
+		}
+	}
+
+	.dropdown-submenu{
+		&:hover{
+			&>a{
+				background: #eee;
+				color:#333;
+			}
+		}
+		&.active{
+			&:hover{
+				&:after{
+					border-left-color:#666;
+				}
+			}
+		}
+		&>a{
+			&:active,&:focus{
+				background: #eee;
+				color:#333;
+			}
+
+			&:after{
+				border-left-color:#666;
+			}
+		}
+		.dropdown-menu{
+			-webkit-border-radius: 0 !important;
+			-moz-border-radius: 0 !important;
+			border-radius: 0 !important;
+
+			.active{
+				&>a{
+					background: #ddd;
+					color:#333;
+				}
+			}
+		}
+	}
+}
+
+.modal{
+	form{
+		margin-bottom: 0;
+	}
+
+	.modal-footer{
+		margin-top: 0;
+	}
+}
+
+.input-append input, .input-append select, .input-append .uneditable-input {
+	@include border-radius(0);
+}
+
+.tooltip {
+	z-index:99999;
+}
+
+.tab-content{
+	overflow:visible;
+}
+
+.uneditable-input{
+	@include border-radius(0);
+}
+
+.btn-group{
+	&.text{
+		font-size:13px;
+		line-height:30px;
+	}
+	.dropdown,.pagination{
+		font-size:13px;
+	}
+	.pagination{
+		margin: 0;
+		ul{
+			@include box-shadow(none);
+		}
+	}
+}
+
+.table-bordered{
+	border-top:0;
+
+	&.table-force-topborder{
+		border-top:1px solid #ddd;
+	}
+
+	&.dataTable{
+		&.dataTable-noheader{
+			border-top:0;
+		}
+		border-top:1px solid #ddd;
+	}
+}
+
+.table-bordered,.table-bordered thead:first-child tr:first-child>th:first-child, .table-bordered tbody:first-child tr:first-child>td:first-child, .table-bordered tbody:first-child tr:first-child>th:first-child,.table-bordered thead:first-child tr:first-child>th:last-child, .table-bordered tbody:first-child tr:first-child>td:last-child, .table-bordered tbody:first-child tr:first-child>th:last-child, .table-bordered thead:last-child tr:last-child>th:first-child, .table-bordered tbody:last-child tr:last-child>td:first-child, .table-bordered tbody:last-child tr:last-child>th:first-child, .table-bordered tfoot:last-child tr:last-child>td:first-child, .table-bordered tfoot:last-child tr:last-child>th:first-child,.table-bordered thead:last-child tr:last-child>th:last-child, .table-bordered tbody:last-child tr:last-child>td:last-child, .table-bordered tbody:last-child tr:last-child>th:last-child, .table-bordered tfoot:last-child tr:last-child>td:last-child, .table-bordered tfoot:last-child tr:last-child>th:last-child {
+	-webkit-border-radius: 0 !important;
+	-moz-border-radius: 0 !important;
+	border-radius: 0 !important;
+}
+
+.input-prepend .add-on:first-child, .input-prepend .btn:first-child, .input-append .add-on:last-child, .input-append .btn:last-child, .input-append .btn-group:last-child>.dropdown-toggle, .input-prepend.input-append .add-on:last-child, .input-prepend.input-append .btn:last-child, .input-prepend.input-append .add-on:first-child, .input-prepend.input-append .btn:first-child, .btn-group>.btn:first-child, .btn-group>.btn:last-child, .btn-group>.dropdown-toggle {
+	-webkit-border-radius: 0 !important;
+	-moz-border-radius: 0 !important;
+	border-radius: 0 !important;
+}
+
+.input-prepend .btn-group .btn:first-child,.input-append .btn-group .btn:first-child{
+	border:1px solid #ccc;
+	padding:4px 8px;
+	-webkit-border-radius: 0 !important;
+	-moz-border-radius: 0 !important;
+	border-radius: 0 !important;
+}
+
+.input-append .add-on:last-child, .input-append .btn:last-child, .input-append .btn-group:last-child>.dropdown-toggle, .input-prepend .btn:first-child{
+	border:1px solid #ccc;
+	padding:4px 8px;
+}
+
+.input-prepend .add-on:first-child {
+	border:1px solid #ccc;
+	padding:4px 6px;
+}
+
+.label{
+	@include border-radius(0);
+	@include text-shadow(none);
+}
+
+input, textarea, input:focus{
+	-webkit-border-radius: 0 !important;
+	-moz-border-radius: 0 !important;
+	border-radius: 0  !important;
+	-webkit-box-shadow: none !important;
+	-moz-box-shadow: none !important;
+	box-shadow: none !important;
+	outline-width: 0;
+}
+
+.modal{
+	@include border-radius(0);
+
+	.modal-footer{
+		@include box-shadow(none);
+	}
+}
+
+.tooltip{
+	.tooltip-inner{
+		@include border-radius(0);
+	}
+}
+
+.btn-group{
+	&.open{
+		.dropdown-toggle{
+			@include box-shadow(none);
+
+			&.btn-primary{
+				background:$primary-blue;
+			}
+			&.btn-danger{
+				background:$red;
+			}
+			&.btn-inverse{
+				background:#333;
+			}
+			&.btn-success{
+				background:$green;
+			}
+			&.btn-warning{
+				background:$orange;
+			}
+			&.btn-info{
+				background:$primary-blue;
+			}
+		}
+	}
+}
+
+textarea, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"], .uneditable-input{
+	background: #fff;
+	color: #333;
+}
+
+.form-horizontal{
+	.control-label{
+		text-align:left;
+	}
+
+	.controls{
+		margin-left: 160px;
+	}
+}
+
+.dropdown-menu{
+	&.dropdown-primary{
+		border-color:$primary-blue;
+
+		&>li{
+			&>a{
+				&:hover{
+					background:$primary-blue;
+					color:#fff;
+				}
+			}
+		}
+	}
+
+	&.dropdown-danger{
+		border-color:$red;
+
+		&>li{
+			&>a{
+				&:hover{
+					background:$red;
+					color:#fff;
+				}
+			}
+		}
+	}
+	&.dropdown-warning{
+		border-color:lighten($orange, 10%);
+
+		&>li{
+			&>a{
+				&:hover{
+					background:$orange;
+					color:#fff;
+				}
+			}
+		}
+	}
+	&.dropdown-success{
+		border-color:$green;
+
+		&>li{
+			&>a{
+				&:hover{
+					background:$green;
+					color:#fff;
+				}
+			}
+		}
+	}
+	&.dropdown-inverse{
+		border-color:lighten(#222, 15%);
+
+		&>li{
+			&>a{
+				&:hover{
+					background:lighten(#222, 15%);
+					color:#fff;
+				}
+			}
+		}
+	}
+}
+
+.btn{
+	background:#eee;
+	border:0;
+	@include box-shadow(none);
+	@include text-shadow(none);
+	@include border-radius(0);
+	color:#444;
+	padding:5px 9px;
+	filter:none;
+
+	&.btn--icon{
+		.fa{
+			margin-right: 5px;
+		}
+	}
+
+	&.btn-large{
+		padding:10px 16px;
+	}
+
+	&.btn-small{
+		padding:3px 7px;
+	}
+
+	&.btn-mini{
+		padding:1px 4px;
+	}
+
+	&.btn-text-left{
+		text-align:left;
+	}
+
+	i{
+		font-size:14px;
+	}
+
+	&:hover{
+		background: #ccc;
+		@include text-shadow(none);
+	}
+
+	&:active{
+		@include box-shadow(none);
+	}
+
+	&:focus{
+		@include box-shadow(none);
+		outline:none;
+	}
+
+	&.btn-primary{
+		background:$primary-blue;
+		color:#fff;
+		@include text-shadow(none);
+		filter:none;
+
+		&:hover{
+			background: darken($primary-blue, 10%);
+		}
+	}
+
+	&.btn-info{
+		background:lighten($primary-blue, 25%);
+		@include text-shadow(none);
+		filter:none;
+
+		&:hover{
+			background: lighten($primary-blue, 10%);
+			color:#333;
+		}
+	}
+
+	&.btn-warning{
+		background:lighten($orange, 10%);
+		@include text-shadow(none);
+		filter:none;
+
+		&:hover{
+			background: $orange;
+			color:#333;
+		}
+	}
+
+	&.btn-danger{
+		background:lighten($red, 15%);
+		@include text-shadow(none);
+		color:#fff;
+		filter:none;
+
+		&:hover{
+			background: $red;
+		}
+	}
+
+	&.btn-success{
+		//background:lighten($green, 10%);
+    background: $green;
+		@include text-shadow(none);
+		color:#fff;
+		filter:none;
+
+		&:hover{
+      background:darken($green, 10%);
+			//background: $green;
+		}
+	}
+
+	&.btn-inverse{
+		background:lighten(#222, 15%);
+		@include text-shadow(none);
+		color:#fff;
+		filter:none;
+
+		&:hover{
+			background: #111;
+		}
+	}
+}
+
+.nav{
+	&.nav-pills, &.nav-list{
+		&>li{
+			&.active{
+				&>a{
+					background:$primary-blue;
+				}
+			}
+		}
+	}
+}
+
+.popover{
+	@include border-radius(0);
+	@include box-shadow(none);
+	padding: 0;
+}
+
+.panel-group{
+	.panel{
+		@include border-radius(0);
+		.panel-heading, .panel-title > a {
+			@include border-radius(0);
+		}
+	}
+}
+
+.alert{
+	@include border-radius(0);
+	border:0;
+}
+
+.progress{
+	@include border-radius(0);
+}
+
+.pagination-large ul>li:first-child>a, .pagination-large ul>li:first-child>span, .pagination-large ul>li:last-child>a, .pagination-large ul>li:last-child>span, .pagination ul>li:first-child>a, .pagination ul>li:first-child>span, .pagination-mini ul>li:first-child>a, .pagination-small ul>li:first-child>a, .pagination-mini ul>li:first-child>span, .pagination-small ul>li:first-child>span, .pagination ul>li:last-child>a, .pagination ul>li:last-child>span, .pagination-mini ul>li:last-child>a, .pagination-small ul>li:last-child>a, .pagination-mini ul>li:last-child>span, .pagination-small ul>li:last-child>span {
+	@include border-radius(0);
+}
+
+.modal-content{
+	@include border-radius(0);
+}
+
+.table{
+	&.table-condensed{
+		tr{
+			th,td{
+				padding:4px 5px;
+			}
+		}
+	}
+	tr{
+		th,td{
+			padding:10px;
+			border-top:1px dotted #ddd;
+		}
+	}
+}
+
+label, input, button, select, textarea {
+	font-size:14px;
+}
+
+.form-actions{
+	background:0;
+	border:0;
+  padding-left: 5px !important;
+}
+
+.text-success,a.text-success{
+  color:$green;
+  &:hover,&:focus{
+    color: darken($green, 10%);
+  }
+}
+.text-danger,a.text-danger{
+  color:$red;
+  &:hover,&:focus{
+    color: darken($red, 10%);
+  }
+}
+
+ngb-modal-window.fade{
+  opacity:1;
+}
+
+ngb-modal-window.modal.fade .modal-dialog {
+  -webkit-transform: translate(0, 0);
+  transform: translate(0, 0);
+}
+
+ngb-modal-window.modal-backdrop.fade{
+  opacity: 0.5;
+}
+
+
+
+
+ngx-dropdown-treeview {
+	.dropdown {
+    width: 100%;
+    display: inline-block;
+    button {
+        width: 100%;
+        margin-right: .9rem;
+        text-align: left;
+        &::after {
+            position: absolute;
+            right: .6rem;
+            margin-top: .6rem;
+        }
+				background: none;
+				border: 1px solid #ccc;
+				&:hover {
+					background: none;
+				}
+				&::after{
+					width: 5px;
+					height: 5px;
+					background-color: #ddd;
+				}
+    }
+
+    .dropdown-menu {
+			min-width: 100%;
+			border-top: 0;
+			border-color: #ccc;
+			border-width: 1px;
+        .dropdown-container {
+            padding: 0 .6rem;
+        }
+    }
+		}
+		.treeview-header {
+				.row-filter {
+						margin-bottom: .5rem;
+				}
+		}
+		.treeview-container {
+				.fa {
+						width: .8rem;
+						cursor: pointer;
+				}
+		}
+
+		.treeview-container {
+		overflow-x: hidden;
+		overflow-y: auto;
+		padding-right: 18px;
+		}
+
+		.treeview-text {
+		padding: .3rem 0;
+		white-space: nowrap;
+		}
+}
+#main{ margin-left: 200px;}
+
+
+
+
+
+/*!
+ * Datetimepicker for Bootstrap 3
+ * version : 4.15.35
+ * https://github.com/Eonasdan/bootstrap-datetimepicker/
+ */
+.bootstrap-datetimepicker-widget {
+  list-style: none;
+}
+.bootstrap-datetimepicker-widget.dropdown-menu {
+  margin: 2px 0;
+  padding: 4px;
+  width: 19em;
+}
+@media (min-width: 768px) {
+  .bootstrap-datetimepicker-widget.dropdown-menu.timepicker-sbs {
+    width: 38em;
+  }
+}
+@media (min-width: 992px) {
+  .bootstrap-datetimepicker-widget.dropdown-menu.timepicker-sbs {
+    width: 38em;
+  }
+}
+@media (min-width: 1200px) {
+  .bootstrap-datetimepicker-widget.dropdown-menu.timepicker-sbs {
+    width: 38em;
+  }
+}
+.bootstrap-datetimepicker-widget.dropdown-menu:before,
+.bootstrap-datetimepicker-widget.dropdown-menu:after {
+  content: '';
+  display: inline-block;
+  position: absolute;
+}
+.bootstrap-datetimepicker-widget.dropdown-menu.bottom:before {
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  border-bottom: 7px solid #cccccc;
+  border-bottom-color: rgba(0, 0, 0, 0.2);
+  top: -7px;
+  left: 7px;
+}
+.bootstrap-datetimepicker-widget.dropdown-menu.bottom:after {
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-bottom: 6px solid white;
+  top: -6px;
+  left: 8px;
+}
+.bootstrap-datetimepicker-widget.dropdown-menu.top:before {
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  border-top: 7px solid #cccccc;
+  border-top-color: rgba(0, 0, 0, 0.2);
+  bottom: -7px;
+  left: 6px;
+}
+.bootstrap-datetimepicker-widget.dropdown-menu.top:after {
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 6px solid white;
+  bottom: -6px;
+  left: 7px;
+}
+.bootstrap-datetimepicker-widget.dropdown-menu.pull-right:before {
+  left: auto;
+  right: 6px;
+}
+.bootstrap-datetimepicker-widget.dropdown-menu.pull-right:after {
+  left: auto;
+  right: 7px;
+}
+.bootstrap-datetimepicker-widget .list-unstyled {
+  margin: 0;
+}
+.bootstrap-datetimepicker-widget a[data-action] {
+  padding: 6px 0;
+}
+.bootstrap-datetimepicker-widget a[data-action]:active {
+  box-shadow: none;
+}
+.bootstrap-datetimepicker-widget .timepicker-hour,
+.bootstrap-datetimepicker-widget .timepicker-minute,
+.bootstrap-datetimepicker-widget .timepicker-second {
+  width: 54px;
+  font-weight: bold;
+  font-size: 1.2em;
+  margin: 0;
+}
+.bootstrap-datetimepicker-widget button[data-action] {
+  padding: 6px;
+}
+.bootstrap-datetimepicker-widget .btn[data-action="incrementHours"]::after {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+  content: "Increment Hours";
+}
+.bootstrap-datetimepicker-widget .btn[data-action="incrementMinutes"]::after {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+  content: "Increment Minutes";
+}
+.bootstrap-datetimepicker-widget .btn[data-action="decrementHours"]::after {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+  content: "Decrement Hours";
+}
+.bootstrap-datetimepicker-widget .btn[data-action="decrementMinutes"]::after {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+  content: "Decrement Minutes";
+}
+.bootstrap-datetimepicker-widget .btn[data-action="showHours"]::after {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+  content: "Show Hours";
+}
+.bootstrap-datetimepicker-widget .btn[data-action="showMinutes"]::after {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+  content: "Show Minutes";
+}
+.bootstrap-datetimepicker-widget .btn[data-action="togglePeriod"]::after {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+  content: "Toggle AM/PM";
+}
+.bootstrap-datetimepicker-widget .btn[data-action="clear"]::after {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+  content: "Clear the picker";
+}
+.bootstrap-datetimepicker-widget .btn[data-action="today"]::after {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+  content: "Set the date to today";
+}
+.bootstrap-datetimepicker-widget .picker-switch {
+  text-align: center;
+}
+.bootstrap-datetimepicker-widget .picker-switch::after {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+  content: "Toggle Date and Time Screens";
+}
+.bootstrap-datetimepicker-widget .picker-switch td {
+  padding: 0;
+  margin: 0;
+  height: auto;
+  width: auto;
+  line-height: inherit;
+}
+.bootstrap-datetimepicker-widget .picker-switch td span {
+  line-height: 2.5;
+  height: 2.5em;
+  width: 100%;
+}
+.bootstrap-datetimepicker-widget table {
+  width: 100%;
+  margin: 0;
+}
+.bootstrap-datetimepicker-widget table td,
+.bootstrap-datetimepicker-widget table th {
+  text-align: center;
+  border-radius: 4px;
+}
+.bootstrap-datetimepicker-widget table th {
+  height: 20px;
+  line-height: 20px;
+  width: 20px;
+}
+.bootstrap-datetimepicker-widget table th.picker-switch {
+  width: 145px;
+}
+.bootstrap-datetimepicker-widget table th.disabled,
+.bootstrap-datetimepicker-widget table th.disabled:hover {
+  background: none;
+  color: #777777;
+  cursor: not-allowed;
+}
+.bootstrap-datetimepicker-widget table th.prev::after {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+  content: "Previous Month";
+}
+.bootstrap-datetimepicker-widget table th.next::after {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+  content: "Next Month";
+}
+.bootstrap-datetimepicker-widget table thead tr:first-child th {
+  cursor: pointer;
+}
+.bootstrap-datetimepicker-widget table thead tr:first-child th:hover {
+  background: #eeeeee;
+}
+.bootstrap-datetimepicker-widget table td {
+  height: 54px;
+  line-height: 54px;
+  width: 54px;
+}
+.bootstrap-datetimepicker-widget table td.cw {
+  font-size: .8em;
+  height: 20px;
+  line-height: 20px;
+  color: #777777;
+}
+.bootstrap-datetimepicker-widget table td.day {
+  height: 20px;
+  line-height: 20px;
+  width: 20px;
+}
+.bootstrap-datetimepicker-widget table td.day:hover,
+.bootstrap-datetimepicker-widget table td.hour:hover,
+.bootstrap-datetimepicker-widget table td.minute:hover,
+.bootstrap-datetimepicker-widget table td.second:hover {
+  background: #eeeeee;
+  cursor: pointer;
+}
+.bootstrap-datetimepicker-widget table td.old,
+.bootstrap-datetimepicker-widget table td.new {
+  color: #777777;
+}
+.bootstrap-datetimepicker-widget table td.today {
+  position: relative;
+}
+.bootstrap-datetimepicker-widget table td.today:before {
+  content: '';
+  display: inline-block;
+  border: solid transparent;
+  border-width: 0 0 7px 7px;
+  border-bottom-color: #337ab7;
+  border-top-color: rgba(0, 0, 0, 0.2);
+  position: absolute;
+  bottom: 4px;
+  right: 4px;
+}
+.bootstrap-datetimepicker-widget table td.active,
+.bootstrap-datetimepicker-widget table td.active:hover {
+  background-color: #337ab7;
+  color: #ffffff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+}
+.bootstrap-datetimepicker-widget table td.active.today:before {
+  border-bottom-color: #fff;
+}
+.bootstrap-datetimepicker-widget table td.disabled,
+.bootstrap-datetimepicker-widget table td.disabled:hover {
+  background: none;
+  color: #777777;
+  cursor: not-allowed;
+}
+.bootstrap-datetimepicker-widget table td span {
+  display: inline-block;
+  width: 54px;
+  height: 54px;
+  line-height: 54px;
+  margin: 2px 1.5px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+.bootstrap-datetimepicker-widget table td span:hover {
+  background: #eeeeee;
+}
+.bootstrap-datetimepicker-widget table td span.active {
+  background-color: #337ab7;
+  color: #ffffff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+}
+.bootstrap-datetimepicker-widget table td span.old {
+  color: #777777;
+}
+.bootstrap-datetimepicker-widget table td span.disabled,
+.bootstrap-datetimepicker-widget table td span.disabled:hover {
+  background: none;
+  color: #777777;
+  cursor: not-allowed;
+}
+.bootstrap-datetimepicker-widget.usetwentyfour td.hour {
+  height: 27px;
+  line-height: 27px;
+}
+.bootstrap-datetimepicker-widget.wider {
+  width: 21em;
+}
+.bootstrap-datetimepicker-widget .datepicker-decades .decade {
+  line-height: 1.8em !important;
+}
+.input-group.date .input-group-addon {
+  cursor: pointer;
+}
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+.bootstrap-datetimepicker-widget .btn {background: none !important;}
+
+.modal-title{ width: 80%; display: inline-block; font-size: 16px; font-weight: 600;}
+
+

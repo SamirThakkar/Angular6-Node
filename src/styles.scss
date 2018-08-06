@@ -1,0 +1,16 @@
+@import "../node_modules/bootstrap/dist/css/bootstrap.css";
+@import "../node_modules/font-awesome/css/font-awesome.css";
+@import "../node_modules/noty/lib/noty.css";
+@import "../node_modules/ng2-slim-loading-bar/style.css";
+
+//Theme css
+@import "assets/sass/style.scss";
+
+#ascrail2000,#ascrail2001,#ascrail2002,#ascrail2003,#ascrail2004,
+#ascrail2005,#ascrail2006,#ascrail2007,#ascrail2008,#ascrail2009
+{ display: none !important;}
+#content.container-fluid.nav-fixed { height:100% !important;}
+
+.help-block.has-error{ color: #f44336; font-size: 12px; margin-left: 0;}
+
+.help-block.has-error.invalid-all{ margin-left: -15px;}

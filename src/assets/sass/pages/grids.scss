@@ -1,0 +1,249 @@
+.grids {
+  .row {
+    margin-top: 10px;
+    margin-bottom: 20px;
+
+    [class*="col-"] {
+      background: #ccc;
+      border: 1px solid #888;
+      text-align: center;
+      line-height: 30px;
+
+      &:hover {
+        background: #aaa;
+      }
+    }
+  }
+}
+
+.the-icons {
+  list-style-type: none;
+
+  li {
+    margin: 5px 0;
+  }
+}
+
+#updateInterval {
+  margin-bottom: 0;
+}
+.ag-fresh {
+	.ag-header {
+		background: #f7f8fc !important;
+		color: #262b4d !important;
+		border-color: #f7f8fc;
+	}
+	.ag-header-cell-label {
+		padding-top: 3px;
+		.ag-header-icon {
+			color: #262b4d !important;
+		}
+		.ag-header-cell-text {
+			margin-right: 10px;
+		}
+	}
+	.ag-ltr {
+		.ag-header-cell {
+			text-align: left;
+			vertical-align: bottom;
+			border: none !important;
+			border-bottom: 2px solid #ddd;
+			padding: 8px;
+			line-height: 1.42857143;
+			background: #f7f8fc;
+			color: #262b4d;
+			font-size: 13px;
+			font-family: 'Open Sans', sans-serif;
+			font-weight: 700;
+		}
+	}
+	.ag-cell-not-inline-editing {
+		padding: 8px !important;
+	}
+	.ag-row-even {
+		background: #fff !important;
+	}
+	.ag-row-odd {
+		background: #fff !important;
+	}
+	.ag-root {
+		border: none !important;
+	}
+	.ag-row {
+		&:hover {
+			background: #f8f8f8 !important;
+		}
+		&:focus {
+			background: #f8f8f8 !important;
+		}
+	}
+	.ag-cell {
+		&:focus {
+			outline: none;
+		}
+	}
+	.ag-header-icon {
+		color: #fff !important;
+		stroke: none !important;
+		fill: #fff !important;
+	}
+}
+.ag-layout-normal {
+	.ag-header-row {
+		.ag-header-cell {
+			&:hover {
+				.ag-icon-menu {
+					color: #fff !important;
+					background-color: transparent;
+					border: 0;
+					padding: 0;
+					background-position: center;
+					margin: 0;
+					background-size: 14px 14px;
+					width: 18px;
+					height: 18px;
+				}
+			}
+		}
+	}
+}
+.ag-cell {
+	padding: 8px;
+	line-height: 1.42857143;
+	vertical-align: top;
+	border: none !important;
+	border-top: 1px solid #f0f5f7 !important;
+	a {
+		&:hover {
+			text-decoration: none;
+		}
+	}
+}
+.ag-paging-button {
+	.fa-caret-left {
+		font-size: 18px;
+	}
+	.fa-caret-right {
+		font-size: 18px;
+	}
+	padding: 3px 8px;
+	margin-right: 5px;
+	background: #eee;
+	color: #333;
+	text-decoration: none;
+	cursor: pointer;
+	border: none;
+	vertical-align: middle;
+	span {
+		vertical-align: middle;
+	}
+	&:hover {
+		background: $blue;
+		color: #fff;
+	}
+}
+.ag-paging-panel {
+	text-align: right;
+	float: right;
+	margin-right: 5px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.ag-paging-button.active {
+	background: $blue;
+	color: #fff;
+}
+
+.page-header .m-t {
+  margin-top: 15px;
+}
+.icons.icon-pencil {
+	color: #262b4d;
+	cursor: pointer;
+	vertical-align: middle;
+	&:hover {
+		outline: none;
+		text-decoration: none;
+	}
+}
+.icons.icon-trash {
+	color: red;
+	cursor: pointer;
+	color: #989bb2;
+	&:hover {
+		outline: none;
+		text-decoration: none;
+	}
+}
+.ag-fresh {
+	.ag-menu {
+		.ag-tab-header {
+			background: transparent !important;
+		}
+		.ag-tab {
+			margin-left: 0 !important;
+			// border-left: 1px #808080 solid !important;
+			border: none;
+		}
+	}
+	.ag-cell-not-inline-editing {
+		a {
+			cursor: pointer;
+			color: #989bb2;
+			font-weight: normal;
+		}
+	}
+	.ag-row.ag-row-hover:not(.disabled-row) {
+		.ag-cell {
+			a.edit-icon {
+				.icons.icon-pencil {
+					color: #00c976;
+				}
+				color: #00c976;
+			}
+			a.trash-icon {
+				.icons.icon-trash {
+					color: #ff5252;
+				}
+				color: #ff5252;
+			}
+		}
+	}
+  .disabled-row {
+    cursor: not-allowed;
+    color: #989bb2 !important;
+	opacity: 0.8;
+	.deleted {
+		color:red;
+	}
+    a,span,i{
+      cursor: not-allowed !important;
+    }
+  }
+}
+.ag-tab-body {
+	background: #f6f6f6;
+	border: 1px solid #f0f5f7;
+	border-top: none;
+}
+.physio-grid {
+	border: 1px solid #f0f5f7;
+	.ag-menu {
+		background: transparent !important;
+		border: 0 !important;
+	}
+}
+.ag-paging-button[disabled] {
+	color: #999;
+	background: #eee;
+}
+.ag-menu-list {
+	background: #f6f6f6;
+	border: 1px solid #808080;
+}
+i.fa.fa-close{
+	color: red;
+}
+i.fa.fa-check{
+	color: green;
+}

@@ -1,0 +1,70 @@
+.panel-group.panel-widget .panel-heading {
+  background: #eee; }
+.panel-group.panel-widget .panel {
+  border: 2px solid #eee;
+  margin-bottom: 2px; }
+  .panel-group.panel-widget .panel:hover {
+    border-color: #dddddd !important; }
+  .panel-group.panel-widget .panel .panel-body {
+    border-top: 0 !important; }
+  .panel-group.panel-widget .panel .panel-heading {
+    padding: 0; }
+    .panel-group.panel-widget .panel .panel-heading:hover {
+      text-decoration: none;
+      background: #dddddd !important; }
+    .panel-group.panel-widget .panel .panel-heading .panel-title > a {
+      padding: 10px 15px;
+      font-size: 18px;
+      color: #333;
+      display: block;
+      position: relative; }
+      .panel-group.panel-widget .panel .panel-heading .panel-title > a:hover {
+        text-decoration: none; }
+
+.tree-node {
+  background: #eee;
+  margin: 5px 0;
+  padding: 5px; }
+  .tree-node:hover {
+    text-decoration: none;
+    background: #dddddd !important; }
+
+.node-content-wrapper {
+  background: none;
+  border: none;
+  font-weight: bold; }
+  .node-content-wrapper:hover {
+    box-shadow: none !important;
+    background: none !important; }
+
+.tree-children {
+  padding-left: 5px !important; }
+  .tree-children .node-wrapper {
+    background: none;
+    border: none;
+    font-weight: normal !important; }
+  .tree-children .tree-node {
+    text-decoration: none;
+    background: none !important; }
+    .tree-children .tree-node:hover {
+      background: none; }
+
+.node-content-wrappe span {
+  background: none; }
+
+.node-content-wrapper-active {
+  background: none !important;
+  box-shadow: none !important;
+  background: none !important; }
+
+.node-content-wrapper.node-content-wrapper-active:hover {
+  background: none !important; }
+
+.node-content-wrapper-active.node-content-wrapper-focused {
+  background: none !important; }
+
+.node-content-wrapper-focused {
+  box-shadow: none !important;
+  background: none !important; }
+
+/*# sourceMappingURL=accordion.css.map */

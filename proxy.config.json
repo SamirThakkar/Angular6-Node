@@ -1,0 +1,27 @@
+{
+  "/api/*":{
+    "target":"http://localhost:9002",
+    "secure":false,
+    "logLevel":"debug"
+  },
+  "/auth/*":{
+    "target":"http://localhost:9002",
+    "secure":false,
+    "logLevel":"debug"
+  },
+  "/login":{
+    "target":"http://localhost:9002",
+    "secure":false,
+    "logLevel":"debug"
+  },
+  "/logout":{
+    "target":"http://localhost:9002",
+    "secure":false,
+    "logLevel":"debug"
+  },
+  "/check-login":{
+    "target":"http://localhost:9002",
+    "secure":false,
+    "logLevel":"debug"
+  }
+}
